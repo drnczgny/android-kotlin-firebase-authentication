@@ -73,8 +73,9 @@ dependencies {
 
     // firebase
     implementation "com.google.android.gms:play-services-auth:$google_play_services_auth"
-    implementation "com.google.firebase:firebase-auth:$firebaseVersion"
-    implementation "com.google.firebase:firebase-core:$firebaseVersion"
+    implementation "com.google.firebase:firebase-auth:$google_play_services_auth"
+    implementation "com.google.firebase:firebase-core:$google_play_services_auth"
+    implementation "com.firebaseui:firebase-ui-auth:3.1.2"
 
     // retrofit
     implementation "com.squareup.retrofit2:adapter-rxjava:$rxVersion"
